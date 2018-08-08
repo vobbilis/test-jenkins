@@ -19,6 +19,7 @@ def notifySlack(text, channel, attachments) {
 }
 node {
     stage("Post to Slack") {
+        echo "The branch is ${env.GIT_BRANCH}."
         notifySlack("Success!", slackNotificationChannel, [])
     }
 }
