@@ -2,7 +2,7 @@
 
 import groovy.json.JsonOutput
 
-def slackNotificationChannel = "#test1"     // ex: = "builds"
+def slackNotificationChannel = "test1"     // ex: = "builds"
 
 def notifySlack(text, channel, attachments) {
     def slackURL = 'https://hooks.slack.com/services/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'
